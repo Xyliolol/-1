@@ -6,7 +6,7 @@ namespace дз1
     {
         static void Main(string[] args)
         {
-            Console.Write("Привет");
+            Console.Write("Привет,");
             string name = Console.ReadLine();
             Console.WriteLine($"{name} сегодня [{DateTime.Now}] !");
         }
