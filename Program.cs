@@ -1,22 +1,69 @@
 ﻿using System;
 
-namespace дз2._1
+namespace дз2._2
 {
     class Program
     {
+        
+
+
         static void Main(string[] args)
         {
-            DateTime date = DateTime.Today;
-            Console.WriteLine(date.ToString("dd.MM.yy"));
-            Console.WriteLine("min t");
-            string min=Console.ReadLine();
-            Console.WriteLine("max t");
-            string max = Console.ReadLine();
-            int mini = Convert.ToInt32(min);
-            int maxi = Convert.ToInt32(max);
-            int average = ((mini + maxi) / 2);
+            Console.WriteLine("Введите текущий месяц");
+            int i = Convert.ToInt32(Console.ReadLine());
+            int Month = Convert.ToInt32(DateTime.Now.ToString("MM"));
+            string MonthTitle = "";
+            switch (Month)
+            {
+              
+                case 1:
+                    MonthTitle = "Январь";
+                    break;
+                case 2:
+                    MonthTitle = "Февраль";
+                    break;
+                case 3:
+                    MonthTitle = "Март";
+                    break;
+                case 4:
+                    MonthTitle = "Апрель";
+                    break;
+                case 5:
+                    MonthTitle = "Май";
+                    break;
+                case 6:
+                    MonthTitle = "Июнь";
+                    break;
+                case 7:
+                    MonthTitle = "Июль";
+                    break;
+                case 8:
+                    MonthTitle = "Август";
+                    break;
+                case 9:
+                    MonthTitle = "Сентябрь";
+                    break;
+                case 10:
+                    MonthTitle = "Октябрь";
+                    break;
+                case 11:
+                    MonthTitle = "Ноябрь";
+                    break;
+                case 12:
+                    MonthTitle = "Декабрь";
+                    break;
+            }
 
-            Console.WriteLine($"среднесуточная температура {date.ToString("dd.MM.yy")} составила {average} градусов");
+            Console.WriteLine(MonthTitle);
+
+            
+
+            
         }
     }
 }
+
+
+    
+
+
